@@ -7,10 +7,11 @@
 
 main {
     width: 100vw;
+    padding-bottom: 3.5em;
 }
 
 section {    
-    padding: 3.5em 13.5vw;
+    padding: 3.5em 13.5vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,9 +95,60 @@ nav > img {
 
 .winnerCompany ul {
     list-style: none;
-    line-height: 1.2em;
+    margin-bottom: 20px;
 }
 
 .winnerCompany ul li {
-    line-height: 1.5em;
+    line-height: 2em;
+}
+
+.winnerCompany a {
+    text-decoration: none;
+    background-color: #E5E5E5;
+    color: black;
+    padding: 5px 10px;
+}
+
+.weekLeaders {
+    align-items: baseline;
+}
+
+.weekLeaders > div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.WeekLeaderContainer {
+    background-color: #e5e5e598;
+    width: 12vw;
+    height: 12vw;
+    padding: 15px;
+    text-align: center;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.WeekLeaderContainer span {
+    font-weight: bold;
+    color: #0055A0;
+}
+
+.weekLeaders .WeekLeaderContainer > div {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.joinText {
+    text-align: center;
+    color: #0055A0;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
