@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 main {
     width: 100vw;
     padding-bottom: 3.5em;
@@ -173,11 +177,13 @@ nav > img {
 
 ul {
     list-style: none;
+    width: 100%;
 }
 
 ul li {
     display: flex;
     line-height: 2em;
+    position: relative;
 }
 
 .dashboardIntro ul li p {
@@ -218,4 +224,35 @@ ul li {
 
 .ranking span {
     margin-left: 20px;
+}
+
+.questionMark {
+    color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.questionMark:hover + .hide {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    top: -50px;
+    z-index: 2;
+    background-color: #f7f7f7;
+    width: 500px;
+    padding: 25px;
+}
+
+
+.hide img {
+    width: 100%;
 }
